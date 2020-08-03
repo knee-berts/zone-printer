@@ -69,7 +69,7 @@ func handle(w http.ResponseWriter, r *http.Request) {
 	dc, ok := datacenters[region]
 
 	fmt.Fprintf(w, `<!DOCTYPE html>
-	<h4>Welcome from Google Cloud datacenters at:<h4>`)
+	<h4>Hola from Google Cloud datacenters at:<h4>`)
 	if !ok {
 		// cannot determine datacenter from zone, just use zone name
 		fmt.Fprintf(w, `<h1>%s!</h1>`, computeZone)
